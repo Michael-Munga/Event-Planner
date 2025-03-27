@@ -14,3 +14,63 @@ body {
   padding: 8px;
   font-size: 16px;
 }
+/* Container for event cards */
+#event-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Individual event card */
+.event-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  padding: 15px;
+  text-align: center;
+}
+
+.event-card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.event-card h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.event-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Buttons */
+button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.register {
+  background-color: #28a745;
+  color: white;
+}
+
+.register:hover {
+  background-color: #218838;
+}
+
+.sold-out {
+  background-color: #dc3545;
+  color: white;
+  cursor: not-allowed;
+}
