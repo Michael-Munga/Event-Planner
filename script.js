@@ -39,3 +39,26 @@ function displayEvents(events) {
 }
 
 fetchAllEvents();
+// Function to filter events by category
+function filterEvents() {
+  const selectedCategory = document.getElementById("categoryFilter").value;
+
+  fetch(`${BASE_URL}/events`)
+    .then((response) => response.json())
+    .then((events) => {
+      const filteredEvents =
+        selectedCategory === "all"
+          ? events
+          : events.filter(
+              (event) =>
+                event.category.toLowerCase() === selectedCategory.toLowerCase()
+            );
+
+      displayEvents(filteredEvents);
+    });
+}
+
+// Event listener
+document
+  .getElementById("categoryFilter")
+  .addEventListener("change", filterEvents);
