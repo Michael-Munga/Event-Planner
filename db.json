@@ -1,4 +1,105 @@
 {
-  "events": [],
+  "events": [
+    {
+      "id": 1,
+      "name": "Tech Conference",
+      "category": "Tech",
+      "image": "https://i.pinimg.com/236x/3f/b5/a5/3fb5a50d2c62afd73efe79ed0e68f918.jpg",
+      "description": "A gathering of tech enthusiasts.",
+      "venue": "Nairobi Convention Center",
+      "date": "2025-05-10",
+      "tickets": 96
+    },
+    {
+      "id": 2,
+      "name": "Chelsea Match",
+      "category": "Sports",
+      "image": "https://i.pinimg.com/236x/7d/3f/11/7d3f111c4f4e68fac7d7bd18e8ea48a4.jpg",
+      "description": "Exciting football action.",
+      "venue": "Thika Stadium",
+      "date": "2025-06-15",
+      "tickets": 999
+    },
+    {
+      "id": 3,
+      "name": "Music Festival",
+      "category": "Music",
+      "image": "https://i.pinimg.com/736x/5b/b2/ea/5bb2ea43213aefa04660c0045ea9464d.jpg",
+      "description": "A night of amazing performances.",
+      "venue": "Mombasa Beach",
+      "date": "2025-07-20",
+      "tickets": 45
+    },
+    {
+      "id": 4,
+      "name": "Art Exhibition",
+      "category": "Art",
+      "image": "https://i.pinimg.com/236x/12/0c/ec/120cec76444eede2ecea72c25f631c10.jpg",
+      "description": "Discover stunning artwork.",
+      "venue": "Nairobi Art Gallery",
+      "date": "2025-08-05",
+      "tickets": 27
+    },
+    {
+      "id": 5,
+      "name": "Gaming Tournament",
+      "category": "Tech",
+      "image": "https://i.pinimg.com/236x/e3/f6/f2/e3f6f2122ff4134e77c555e2db159746.jpg",
+      "description": "Compete in thrilling games.",
+      "venue": "Online Event",
+      "date": "2025-09-10",
+      "tickets": 73
+    },
+    {
+      "id": 6,
+      "name": "Fashion Show",
+      "category": "Art",
+      "image": "https://i.pinimg.com/236x/35/a5/56/35a55662c55dd8585a8abfffd2e9753d.jpg",
+      "description": "Experience the latest trends.",
+      "venue": "KICC Nairobi",
+      "date": "2025-10-15",
+      "tickets": 38
+    },
+    {
+      "id": 7,
+      "name": "Comedy Night",
+      "category": "Music",
+      "image": "https://i.pinimg.com/236x/94/4c/0b/944c0b7ddd89dd4f4ec377e0bce3928d.jpg",
+      "description": "Laugh out loud with top comedians.",
+      "venue": "Alliance Francaise",
+      "date": "2025-11-05",
+      "tickets": 18
+    },
+    {
+      "id": 8,
+      "name": "Basketball Finals",
+      "category": "Sports",
+      "image": "https://i.pinimg.com/236x/e5/38/23/e53823decd360fc189bc00b2c3d53579.jpg",
+      "description": "Watch top teams battle for the title.",
+      "venue": "Nyayo Stadium",
+      "date": "2025-12-01",
+      "tickets": 9
+    },
+    {
+      "id": 9,
+      "name": "Coding Bootcamp",
+      "category": "Tech",
+      "image": "https://img.freepik.com/free-photo/robot-handshake-human-background-futuristic-digital-age_53876-129770.jpg?ga=GA1.1.1357202898.1742995777&semt=ais_hybrid",
+      "description": "Learn coding with top mentors.",
+      "venue": "iHub Nairobi",
+      "date": "2026-01-15",
+      "tickets": 25
+    },
+    {
+      "id": 10,
+      "name": "New Year's Eve Party",
+      "category": "Music",
+      "image": "https://img.freepik.com/free-photo/celebrating-with-sparklers-night_53876-18286.jpg?ga=GA1.1.1357202898.1742995777&semt=ais_hybrid",
+      "description": "Celebrate the new year in style!",
+      "venue": "Diani Beach",
+      "date": "2026-12-31",
+      "tickets": 0
+    }
+  ],
   "registrations": []
 }
