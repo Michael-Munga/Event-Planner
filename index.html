@@ -24,6 +24,20 @@
     <section id="event-list">
       <!-- Events-->
     </section>
+    <!-- Registration Form Section -->
+    <section id="registration-section">
+      <div id="registration-form" style="display: none">
+        <h2>Register for <span id="event-name-display"></span></h2>
+        <form id="registerForm">
+          <input type="hidden" id="event" />
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </section>
 
     <script src="script.js"></script>
   </body>

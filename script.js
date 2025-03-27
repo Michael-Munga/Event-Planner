@@ -62,3 +62,47 @@ function filterEvents() {
 document
   .getElementById("categoryFilter")
   .addEventListener("change", filterEvents);
+// Function to open registration form
+function openRegistrationForm(eventId, eventName) {
+  document.getElementById("registration-form").style.display = "block";
+  document.getElementById("event").value = eventId;
+  document.getElementById("event-name-display").textContent = eventName;
+}
+
+// Function to handle event registration
+document
+  .getElementById("registerForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const eventId = document.getElementById("event").value;
+
+    if (!name || !email || !eventId) {
+      alert("Please fill in all fields!");
+      return;
+    }
+
+    // Fetch event details to check ticket availability
+    fetch(`${BASE_URL}/events/${eventId}`)
+      .then((response) => response.json())
+      .then((eventData) => {
+        if (eventData.tickets > 0) {
+          const updatedTickets = eventData.tickets - 1;
+
+          return fetch(`${BASE_URL}/events/${eventId}`, {
+            method: "PATCH",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ tickets: updatedTickets }),
+          }).then(() => {
+            alert(`Successfully registered for ${eventData.name}!`);
+            fetchAllEvents(); // Fetch updated event list
+            document.getElementById("registerForm").reset();
+            document.getElementById("registration-form").style.display = "none";
+          });
+        } else {
+          alert("Sorry, this event is sold out!");
+        }
+      });
+  });
