@@ -4,3 +4,13 @@ body {
   padding: 0;
   background-color: #f4f4f4;
 }
+/* Filter Section */
+.filter-section {
+  text-align: center;
+  margin: 20px;
+}
+
+#categoryFilter {
+  padding: 8px;
+  font-size: 16px;
+}
