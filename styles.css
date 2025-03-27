@@ -2,8 +2,10 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f8f9fa;
+  color: #333;
 }
+
 /* Filter Section */
 .filter-section {
   text-align: center;
@@ -11,9 +13,20 @@ body {
 }
 
 #categoryFilter {
-  padding: 8px;
+  padding: 10px;
   font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #007bff;
+  background: white;
+  color: #007bff;
+  cursor: pointer;
 }
+
+#categoryFilter:hover {
+  background-color: #007bff;
+  color: white;
+}
+
 /* Container for event cards */
 #event-list {
   display: flex;
@@ -26,38 +39,50 @@ body {
 /* Individual event card */
 .event-card {
   background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 300px;
-  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  padding: 20px;
   text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
 }
 
 .event-card img {
   width: 100%;
-  height: 150px;
-  border-radius: 10px;
+  height: 160px;
+  border-radius: 12px;
   object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.event-card img:hover {
+  transform: scale(1.1);
 }
 
 .event-card h2 {
-  font-size: 18px;
+  font-size: 20px;
   margin: 10px 0;
+  color: #007bff;
 }
 
 .event-card p {
   font-size: 14px;
-  color: #555;
+  color: #666;
 }
 
 /* Buttons */
 button {
-  padding: 10px;
+  padding: 12px;
   width: 100%;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
 .register {
@@ -74,6 +99,7 @@ button {
   color: white;
   cursor: not-allowed;
 }
+
 /* Registration Form */
 #registration-form {
   display: none;
@@ -82,30 +108,31 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 300px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 320px;
   text-align: center;
 }
 
 #registration-form h2 {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  color: #007bff;
 }
 
 #registration-form input {
   width: 100%;
   padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  margin: 12px 0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
 }
 
 #registration-form button {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
 }
@@ -122,7 +149,7 @@ button {
 #registration-form .close-btn {
   background-color: #dc3545;
   color: white;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 #registration-form .close-btn:hover {

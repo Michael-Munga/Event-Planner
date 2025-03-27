@@ -8,7 +8,7 @@
       "description": "A gathering of tech enthusiasts.",
       "venue": "Nairobi Convention Center",
       "date": "2025-05-10",
-      "tickets": 96
+      "tickets": 91
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "description": "Exciting football action.",
       "venue": "Thika Stadium",
       "date": "2025-06-15",
-      "tickets": 999
+      "tickets": 994
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "description": "A night of amazing performances.",
       "venue": "Mombasa Beach",
       "date": "2025-07-20",
-      "tickets": 45
+      "tickets": 42
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "description": "Discover stunning artwork.",
       "venue": "Nairobi Art Gallery",
       "date": "2025-08-05",
-      "tickets": 27
+      "tickets": 26
     },
     {
       "id": 5,
@@ -101,5 +101,20 @@
       "tickets": 0
     }
   ],
-  "registrations": []
+  "registrations": [
+    {
+      "name": "Balozi",
+      "email": "micknyalle@gmail.com",
+      "eventId": "2",
+      "eventName": "Chelsea Match",
+      "id": 1
+    },
+    {
+      "name": "Saka",
+      "email": "saka@gmail.com",
+      "eventId": "1",
+      "eventName": "Tech Conference",
+      "id": 2
+    }
+  ]
 }

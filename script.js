@@ -96,10 +96,23 @@ document
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ tickets: updatedTickets }),
           }).then(() => {
-            alert(`Successfully registered for ${eventData.name}!`);
-            fetchAllEvents(); // Fetch updated event list
-            document.getElementById("registerForm").reset();
-            document.getElementById("registration-form").style.display = "none";
+            // Save registration details
+            fetch(`${BASE_URL}/registrations`, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                name: name,
+                email: email,
+                eventId: eventId,
+                eventName: eventData.name,
+              }),
+            }).then(() => {
+              alert(`Successfully registered for ${eventData.name}!`);
+              fetchAllEvents(); // Fetch updated event list
+              document.getElementById("registerForm").reset();
+              document.getElementById("registration-form").style.display =
+                "none";
+            });
           });
         } else {
           alert("Sorry, this event is sold out!");
