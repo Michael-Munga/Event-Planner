@@ -18,7 +18,7 @@
       "description": "Exciting football action.",
       "venue": "Thika Stadium",
       "date": "2025-06-15",
-      "tickets": 994
+      "tickets": 993
     },
     {
       "id": 3,
@@ -115,6 +115,13 @@
       "eventId": "1",
       "eventName": "Tech Conference",
       "id": 2
+    },
+    {
+      "name": "Saka",
+      "email": "micknyalle@gmail.com",
+      "eventId": "2",
+      "eventName": "Chelsea Match",
+      "id": 3
     }
   ]
 }
