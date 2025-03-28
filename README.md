@@ -1,6 +1,6 @@
 Event Planner
 
-#Overview
+Overview
 
 Event Planner is a simple web-based application where users can browse events, filter them by category, and register for available events. It uses HTML, CSS, and JavaScript for interactivity.
 
