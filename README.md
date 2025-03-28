@@ -20,9 +20,9 @@ HTML, CSS, JavaScript
 
 JSON Server (for mock data)
 
-Setup Instructions
+#Setup Instructions
 
-Prerequisites
+PREREQUISITES
 
 Install Node.js
 
