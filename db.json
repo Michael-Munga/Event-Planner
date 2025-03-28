@@ -8,7 +8,7 @@
       "description": "A gathering of tech enthusiasts.",
       "venue": "Nairobi Convention Center",
       "date": "2025-05-10",
-      "tickets": 91
+      "tickets": 90
     },
     {
       "id": 2,
@@ -122,6 +122,13 @@
       "eventId": "2",
       "eventName": "Chelsea Match",
       "id": 3
+    },
+    {
+      "name": "MUNGA",
+      "email": "michaelnyale47@gmail.com",
+      "eventId": "1",
+      "eventName": "Tech Conference",
+      "id": 4
     }
   ]
 }
