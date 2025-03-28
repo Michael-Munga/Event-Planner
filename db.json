@@ -8,7 +8,7 @@
       "description": "A gathering of tech enthusiasts.",
       "venue": "Nairobi Convention Center",
       "date": "2025-05-10",
-      "tickets": 90
+      "tickets": 89
     },
     {
       "id": 2,
@@ -129,6 +129,13 @@
       "eventId": "1",
       "eventName": "Tech Conference",
       "id": 4
+    },
+    {
+      "name": "77",
+      "email": "michaelnyale47@gmail.com",
+      "eventId": "1",
+      "eventName": "Tech Conference",
+      "id": 5
     }
   ]
 }

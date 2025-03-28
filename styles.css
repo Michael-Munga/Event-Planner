@@ -78,6 +78,7 @@ header {
 .event-card p {
   font-size: 14px;
   color: #666;
+  font-family: "Inter", sans-serif;
 }
 
 /* Buttons */
@@ -124,6 +125,7 @@ button {
 #registration-form h2 {
   margin-bottom: 12px;
   color: #007bff;
+  font-family: "Inter", sans-serif;
 }
 
 #registration-form input {
